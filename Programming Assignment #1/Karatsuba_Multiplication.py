@@ -14,6 +14,6 @@ def karatsuba(x,y):
         p,q = a+b,c+d
         ac, bd, pq = karatsuba(a,c), karatsuba(b,d), karatsuba(p,q)
         adbc = pq - (ac+bd)
-        result = (10**(2*splitpos)*(ac))+(10**(splitpos)*(adbc))+bd
-        return int(float(result))
+        return (10**(2*splitpos)*(ac))+(10**(splitpos)*(adbc))+bd
+
 
